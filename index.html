@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>best online food delivery service in india onlinefoodies.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        :root {
+            --navbar-height: 59px;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #logo {
+            margin: 10px 12px;
+        }
+
+        #logo img {
+            height: 58px;
+            margin: 2px 5px;
+            border-radius: 27px;
+        }
+
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: -10.6;
+            top: 0px;
+            left: 0px;
+        }
+
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar ul li {
+            color: white;
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: rgb(255, 255, 255);
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+
+        /*home section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 349px;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('./bg.jpg') no-repeat center center/cover;
+            height:75%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.99;
+            top: 0px;
+            left: 0px;
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-family: 'IBM Plex Mono', monospace;
+
+
+        }
+
+        #home p {
+            height: 400px;
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        /* utility class*/
+        .h-primary {
+            font-size: 3rem;
+            padding: 12px;
+            margin: 80px;
+            font-family: 'IBM Plex Mono', monospace;
+
+        }
+
+        .h-secondary {
+            font-size: 2.3rem;
+            padding: 12px;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .btn {
+            padding: 4px 26px;
+            border: 2px solid white;
+            background-color: rgb(255, 152, 16);
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /*service section*/
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid rgb(194, 45, 253);
+            padding: 34px;
+            margin: -60px 6px;
+            border-radius: 20px;
+            background-color: rgb(238, 210, 174);
+            flex-direction: column;
+
+        }
+
+        #services .box img {
+            display: block;
+            height: 160px;
+            margin: auto;
+        }
+
+
+        
+        /*clients section */
+
+        #client-section{
+            height:250px;
+            
+        }
+
+        #clients{
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #clients img{
+            width: 100px;
+            padding: 6px;
+            height: auto;
+        }
+
+        #client-section::before{
+            content: "";
+            position: absolute;
+            background : url('/block-chain-2850276_1920.jpg');
+            width: 100%;
+            height:48%;
+            z-index: -1 ;
+            opacity: 0.8;
+        }
+        /*contact section */
+
+        #contact{
+            position: relative;
+
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height:110%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('./contact.jpg');
+           
+        }
+        footer{
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 2.3rem;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+        #contact-box input
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <div id="logo">
+            <img src="logo.jpg" alt="onlinefoodies.com ">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to onlineFoodies</h1>
+        <p>
+            “Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your personal history, your province, your region, your tribe, your grandma. It's inseparable from those from the get-go.”
+
+Anthony Bourdain
+        </p>
+
+        
+
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="onlineFoodies">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">The food at your doorstep
+
+                    Why starve when you have us
+                    
+                    You hunger partner
+                    
+                    The one you can count on
+                    
+                    Don’t starve, just order
+                    
+                    Good food within minutes
+                    Delivering happiness
+                    
+                    
+                    
+                    </p>
+            </div>
+            <div id="services">
+                <div class="box">
+                    <img src="img/2.png" alt="onlineFoodies">
+                    <h2 class="h-secondary center">Food catering</h2>
+                    <p class="center">bEST food catering in our city 
+                        100% good service and customer freindly
+                        we can cater for more details call 9049622586
+
+                    </p>
+                </div>
+
+                <div id="services">
+                    <div class="box">
+                        <img src="img/3.png" alt="">
+                        <h2 class="h-secondary center">Food delivery</h2>
+                        <p class="center">
+                            have ur delivery at ur door in 30 minutes 
+                            no extra charges on delivery 
+                            get a free coupon on order of more than 600rs
+                            <br>
+                            food will be too hot to resist
+                        </p>
+                    </div>
+                </div>
+                </h1>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">
+            contact us
+        </h1>
+
+        <div id="contact-box">
+<form action=""> 
+    <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" placeholder="enter your name">
+    </div>
+
+
+
+   
+
+    <div class="form-group">
+        <label for="name">email:</label>
+        <input type="email" name="name" id="name" placeholder="enter your email">
+    </div>
+
+    <div class="form-group">
+        <label for="name">phone number:</label>
+        <input type="phone" name="name" id="name" placeholder="enter your phone number">
+    </div>
+
+    <div class="form-group">
+        <label for="name">feedback:</label>
+        <input type="text" name="name" id="name" placeholder="enter feedback">
+    </div>
+</form>
+
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.OnlineFoodies.com All rights reserved 
+        </div>
+        
+    </footer>
+    
+</body>
+
+</html>
